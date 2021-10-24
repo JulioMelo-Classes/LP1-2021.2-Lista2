@@ -27,3 +27,13 @@ voce usaria ``!p(*it1)``.
 - any_of: retorna verdadeiro se ao menos um elemento do range satisfaz p, falso caso contrário
 - none_of: retorna verdadeiro se todos os elementos do range __não__ satisfazem p, falso caso contrário
 
+## Executando os testes
+
+Nesta questão para executar os testes você precisa fazer os seguintes comandos, no terminal, a partir do diretório onde este README está:
+
+```
+mkdir build
+cd build
+cmake ..
+cmake --build . --target run_tests
+```

@@ -32,6 +32,17 @@ any_of
 
 O programa deve imprimir True, uma vez que existe algum elemento que é maior do que 0.
 
+## Executando os testes
+
+Nesta questão para executar os testes você precisa fazer os seguintes comandos, no terminal, a partir do diretório onde este README está:
+
+```
+mkdir build
+cd build
+cmake ..
+cmake --build . --target verify
+```
+
 ## Sugestões
 
 Nesta questão você tem a opção de utilizar tanto a sua versão para as funções all, none e any_of, quanto usar as versões

@@ -8,7 +8,7 @@ using std::distance;
 #include <algorithm>
 using std::sort;
 
-/*! 
+/** 
  * TODO: documentação no estilo doxygen
  */
 template<class InputIt, class UnaryPredicate>
@@ -18,7 +18,7 @@ bool all_of(InputIt first, InputIt last, UnaryPredicate p)
     return false;
 }
 
-/*! 
+/** 
  * TODO: documentação no estilo doxygen
  */
 template<class InputIt, class UnaryPredicate>
@@ -28,7 +28,7 @@ bool any_of(InputIt first, InputIt last, UnaryPredicate p)
     return false;
 }
 
-/*! 
+/** 
  * TODO: documentação no estilo doxygen
  */
 template<class InputIt, class UnaryPredicate>
