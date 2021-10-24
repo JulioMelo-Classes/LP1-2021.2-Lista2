@@ -12,8 +12,8 @@
 class Casa{
     
     private:
-        std::string dono; //!< nome do dono da casa.
-        int numero; //!< número da casa. O número deve ser setado pela classe Rua.
+        std::string m_dono; //!< nome do dono da casa.
+        int m_numero; //!< número da casa. O número deve ser setado pela classe Rua.
     
     public:
         /**

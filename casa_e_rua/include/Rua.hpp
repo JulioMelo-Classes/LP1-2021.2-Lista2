@@ -14,9 +14,9 @@
 class Rua{
 
     private:
-        std::string nome; //<! uma string com o nome da rua
-        std::string CEP; //<! uma string no formato XX-XXX-XXX
-        std::vector<Casa> A, B; //<! containers contendo um conjunto de casas em cada lado da Rua
+        std::string m_nome; //<! uma string com o nome da rua
+        std::string m_CEP; //<! uma string no formato XX-XXX-XXX
+        std::vector<Casa> m_A, m_B; //<! containers contendo um conjunto de casas em cada lado da Rua
 
     public:
         /**
