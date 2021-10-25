@@ -49,6 +49,16 @@ Selan 10 2 3 5 1 9 8 17 20 2 3
 Isaac 7 1 43 1 2 44 11 33
 ```
 
+Essa entrada irá gerar uma saída no formato:
+
+```
+Vencedores
+Isaac
+>>Números acertados 12
+>>Cartelas completadas 1
+>>Dinheiro recebido R$ 80
+```
+
 ## Executando os testes
 
 Nesta questão para executar os testes você precisa fazer os seguintes comandos, no terminal, a partir do diretório onde este README está:
