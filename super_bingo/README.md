@@ -36,6 +36,8 @@ Caso contrário, retorne para o passo 4.
     - Para calcular o valor recebido use os métodos `getTotalNumeros` e `getTotalCartelas` da classe jogador. 
     **Esses métodos precisam ser implementado por você!**
     - Ao final imprima os vencedores de acordo com o formato especificado
+6. Após imprimir os vecedores, antes do programa terminar, libere a memória alocada dinamicamente de forma que não hajam leaks ao fim
+do programa.
 
 
 Um exemplo de entrada e saída segue abaixo, observe que a aposta supõe que a primeira cartela tem __indice__ 1:
