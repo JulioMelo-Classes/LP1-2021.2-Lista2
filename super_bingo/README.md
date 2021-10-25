@@ -55,7 +55,7 @@ Nesta questão para executar os testes você precisa fazer os seguintes comandos
 mkdir build
 cd build
 cmake ..
-cmake --build . --target run_tests
+cmake --build . --target verify
 ```
 
 ## Importante
