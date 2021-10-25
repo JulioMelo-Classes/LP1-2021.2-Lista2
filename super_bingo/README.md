@@ -38,7 +38,7 @@ Caso contrário, retorne para o passo 4.
     - Ao final imprima os vencedores de acordo com o formato especificado
 
 
-Um exemplo de entrada e saída segue abaixo:
+Um exemplo de entrada e saída segue abaixo, observe que a aposta supõe que a primeira cartela tem __indice__ 1:
 
 ```
 10
