@@ -28,7 +28,7 @@ apostou, fazendo com que o precisemos marcar o número em uma dada cartela apena
 4. Realize o sorteio de um dos 25 números do bingo usando método `getNumeroAleatorio` da classe Cartela.
     - Se o número retornado já foi sorteado, apenas chame o método novamente até que um novo número seja retornado.
     - Use o método `marcarNumero` da classe Cartela para marcar o número sorteado. Após marcar todas as cartelas, verifique se alguma 
-    cartela está completa com método `estaCompleta`.
+    cartela, __de algum jogador__, está completa com método `estaCompleta`.
 5. Se alguma cartela for completada após a marcação, finalize o jogo, exiba os vencedores e a quantidade de dinheiro recebida por cada um.
 Caso contrário, retorne para o passo 4.
     - Itere no vetor de jogadores e determine a quantidade de pontos do vencedor, depois descubra quais jogadores atingiram 
