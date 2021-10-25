@@ -6,8 +6,8 @@ de aulas.
 
 A ordem sugerida para resolução das questões é:
 
-1. [all_any_none_of (Templates)](./all_any_none_of)
-2. [all_any_none_of_program (Templates)](./all_any_none_of_program)
+1. [all_any_none_of (Templates e Iterators)](./all_any_none_of)
+2. [all_any_none_of_program (Templates e Iterators)](./all_any_none_of_program)
 3. [Casa e Rua (Classes e Objetos)](./casa_e_rua)
 4. [Figura Geometrica (Classes e Objetos)](./figura_geometrica)
 5. [Pessoa e Cadastro (Classes e Gerenciamento de Memória)](./pessoa_e_cadastro)
