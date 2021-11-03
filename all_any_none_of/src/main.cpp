@@ -94,16 +94,6 @@ int main ( void )
         EXPECT_TRUE( result, "At main.cpp line " + std::to_string(__LINE__) );
     }
 
-    {
-        BEGIN_TEST( tm,"AnyOf2", "Input: Empty; test if any is greater than 30; expecting False");
-        int A[]{ 10, 20, 30, 40, 50, 60, 70 };
-        bool result;
-
-        result = any_of( std::begin(A), std::begin(A),
-                []( const int& e ){ return e > 30; } );
-
-        EXPECT_FALSE( result, "At main.cpp line " + std::to_string(__LINE__) );
-    }
 
     //== none_of
 
@@ -140,16 +130,6 @@ int main ( void )
         EXPECT_FALSE( result, "At main.cpp line " + std::to_string(__LINE__) );
     }
 
-    {
-        BEGIN_TEST( tm,"NoneOf3", "Input: Empty; test if all are not greater than 30; expecting False");
-        int A[]{ 10, 20, 30, 40, 50, 60, 70 };
-        bool result;
-
-        result = none_of( std::begin(A), std::begin(A),
-                []( const int& e ){ return e > 30; } );
-
-        EXPECT_TRUE( result, "At main.cpp line " + std::to_string(__LINE__) );
-    }
 
     tm.summary();
     std::cout << std::endl;
