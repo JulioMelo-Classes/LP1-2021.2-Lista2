@@ -61,7 +61,7 @@ int main ( void )
     }
 
     {
-        BEGIN_TEST( tm,"Area of Triangle", "Input: (-3, 0), (0, 0) (-1, 3); test area equals to 4.5;");
+        BEGIN_TEST( tm,"Area of Triangle", "Input: (-3, 0), (0, 0), (-1, 3); test area equals to 4.5;");
         FiguraGeometrica f("T1",1);
         f.addPoint({-3, 0});
         f.addPoint({0, 0});
@@ -72,7 +72,7 @@ int main ( void )
     }
 
     {
-        BEGIN_TEST( tm,"Area of Triangle 2", "Input: (-2, -1), (2, 0) (-2, 2); test area equals to 6 and toString;");
+        BEGIN_TEST( tm,"Area of Triangle 2", "Input: (-2, -1), (2, 0), (-2, 2); test area equals to 6 and toString;");
         FiguraGeometrica f("T2",1);
         f.addPoint({-3, 0});
         f.addPoint({0, 0});
@@ -80,23 +80,23 @@ int main ( void )
         auto result = f.getArea();
 
         EXPECT_TRUE( f_equals(result, 6) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-2, -1), (2, 0) (-2, 2)}") , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-2, -1), (2, 0), (-2, 2)}") , "At main.cpp line " + std::to_string(__LINE__));
     }
 
     {
-        BEGIN_TEST( tm,"Area of Triangle 3", "Input: (-3, 1), (2, -2) (1, 3); test area equals to 12 and toString;");
+        BEGIN_TEST( tm,"Area of Triangle 3", "Input: (-3, 1), (2, -2), (1, 3); test area equals to 12 and toString;");
         FiguraGeometrica f("T3",1);
         f.addPoint({-3, 1});
         f.addPoint({2, -2});
         f.addPoint({1, 3});
         auto result = f.getArea();
         EXPECT_TRUE( f_equals(result, 12) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( (f.toString() == "T3:TRIANGULO - {(-3, 1), (2, -2) (1, 3)}") , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "T3:TRIANGULO - {(-3, 1), (2, -2), (1, 3)}") , "At main.cpp line " + std::to_string(__LINE__));
 
     }
 
     {
-        BEGIN_TEST( tm,"Area of Triangle 4", "Input: (-2, -1), (2, 0) (-2, 2); testing if area equal to -1 and adding more than 3 points;");
+        BEGIN_TEST( tm,"Area of Triangle 4", "Input: (-2, -1), (2, 0), (-2, 2); testing if area equal to -1 and adding more than 3 points;");
         FiguraGeometrica f("T4",1);
         f.addPoint({-3, 0});
         
