@@ -79,7 +79,7 @@ int main ( void )
         f.addPoint({-1, 3});
         auto result = f.getArea();
 
-        EXPECT_TRUE( f_equals(result, 6) , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_FALSE( f_equals(result, 6) , "At main.cpp line " + std::to_string(__LINE__));
         EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-3, 0), (0, 0), (-1, 3)}") , "At main.cpp line " + std::to_string(__LINE__));
     }
 
