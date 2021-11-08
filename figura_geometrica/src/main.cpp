@@ -47,7 +47,7 @@ int main ( void )
 
         auto result = f.getArea();
         EXPECT_TRUE( f_equals(result, 24) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( f.toString() == "R3:RETANGULO - {(-1, 3), (5, -1)}" , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "R3:RETANGULO - {(-1, 3), (5, -1)}") , "At main.cpp line " + std::to_string(__LINE__));
     }
 
     {
@@ -80,7 +80,7 @@ int main ( void )
         auto result = f.getArea();
 
         EXPECT_TRUE( f_equals(result, 6) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( f.toString() == "T2:TRIANGULO - {(-2, -1), (2, 0) (-2, 2)}" , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-2, -1), (2, 0) (-2, 2)}") , "At main.cpp line " + std::to_string(__LINE__));
     }
 
     {
@@ -91,7 +91,7 @@ int main ( void )
         f.addPoint({1, 3});
         auto result = f.getArea();
         EXPECT_TRUE( f_equals(result, 12) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( f.toString() == "T3:TRIANGULO - {(-3, 1), (2, -2) (1, 3)}" , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "T3:TRIANGULO - {(-3, 1), (2, -2) (1, 3)}") , "At main.cpp line " + std::to_string(__LINE__));
 
     }
 
