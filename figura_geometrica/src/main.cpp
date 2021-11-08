@@ -72,7 +72,7 @@ int main ( void )
     }
 
     {
-        BEGIN_TEST( tm,"Area of Triangle 2", "Input: (-2, -1), (2, 0), (-2, 2); test area equals to 6 and toString;");
+        BEGIN_TEST( tm,"Area of Triangle 2", "Input: (-3, 0), (0, 0), (-1, 3); test area equals to 6 and toString;");
         FiguraGeometrica f("T2",1);
         f.addPoint({-3, 0});
         f.addPoint({0, 0});
@@ -80,7 +80,7 @@ int main ( void )
         auto result = f.getArea();
 
         EXPECT_TRUE( f_equals(result, 6) , "At main.cpp line " + std::to_string(__LINE__));
-        EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-2, -1), (2, 0), (-2, 2)}") , "At main.cpp line " + std::to_string(__LINE__));
+        EXPECT_TRUE( (f.toString() == "T2:TRIANGULO - {(-3, 0), (0, 0), (-1, 3)}") , "At main.cpp line " + std::to_string(__LINE__));
     }
 
     {
